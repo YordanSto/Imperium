@@ -1,0 +1,272 @@
+body {
+	background-color: white;
+	font-family: "Helvetica";
+}
+/*Hiermee wordt het logo opgemaakt*/
+nav {
+	width: 99px;
+	height: 84px;
+	position: absolute;
+	top: 20px;
+	left: 651px;
+}
+#logo {
+	width: 99px;
+	height: 84px;
+}
+/*Hier wordt er bepaald wat er moet gebeuren als
+de muis over het logo gaat*/
+#logo:hover {
+	content: url('LogoHover.jpg');
+    width: 99px;
+    height: 84px;
+ }
+/*Hiermee wordt de header opgemaakt*/
+header {
+	width: 1064px;
+	height: 226px;
+	position: absolute;
+	top: 120px; 
+	left: 169px;
+}
+/*Hiermee wordt de hoofdsectie opgemaakt*/
+section {
+	width: 1064px;
+	height: 530px;
+	position: absolute;
+	top: 363px;
+	left: 169px;
+	border: 1px solid black;
+	border-radius: 11px;
+}
+h1 {
+	color: #8C002B;
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	top: 14px;
+	left: 466px;
+	margin: 0px;
+}
+h2 {
+	color: #9C9B9B;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	top: 83px;
+	left: 353px;
+	margin: 0px;
+}
+/*Hiermee wordt de tabel met bestelgegevens opgemaakt*/
+table {
+	position: absolute;
+	top: 162px;
+	left: 351px;
+	font-size: 16px;
+	color: #333333;
+	width: 362px;
+	height: 152px;
+}
+th {
+	padding: 0px;
+	vertical-align: text-top;
+	width: 156px;
+	height: 19px;
+	text-align: right;
+	font-weight: bold;
+}
+td {
+	padding: 0px;
+	vertical-align: text-top;
+	width: 196px;
+	height: 19px;
+	text-align: left;
+}
+/*Hiermee worden de buttons opgemaakt*/
+button {
+	position: absolute;
+	top: 444px;
+	left: 345px;
+	padding: 0px;
+	width: 183px;
+	height: 54px;
+	background-color: white;
+	border: 2px solid #8C002B;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.18);
+	color: #8C002B;
+	text-decoration: none;
+}
+/*Hiermee wordt de bevestigingsbutton gepostioneerd*/
+#bevestigen {
+	left: 539px;
+}
+/*Hier wordt er bepaald wat er moet gebeuren als
+de muis over een de buttons heen gaat*/
+button:hover {
+	background-color: #DA0043;
+	color: white;
+	box-shadow: 0px 0px 0px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.65)
+}
+button:active, button:focus {
+	outline: none;
+}
+button a:hover {
+	color: white;
+}
+/*Hiermee wordt het hoofdmenu opgemaakt*/
+#menu {
+	width: 1064px;
+	height: 89px;
+	position: absolute;
+	top: 911px;
+	left: 169px;
+}
+#aboutus, #fotoboek, #lidworden, #huren {
+	margin-right: 1px;
+}
+nav ul {
+	display: inline-block;
+	list-style: none;	
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+nav li {
+	float: left;
+	background-color: #2E011B;
+	display: inline-block;
+	border-radius: 5px;
+	width: 354px;
+	height: 44px;
+}
+nav a {
+	line-height: 2.7;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+/*Hiermee wordt de icoontjes van de menuknoppen gepostioneerd*/
+#aboutusicon {
+	position: absolute;
+	left: 69px;
+	top: 9px;
+	width: 27px;
+	height: 27px;
+}
+#fotoboekicon{
+	position: absolute;
+	left: 418px;
+	top: 11px;
+	width: 30px;
+	height: 23px;
+}
+#nieuwsbrieficon {
+	position: absolute;
+	left: 767px;
+	top: 5px;	
+	width: 36px;
+	height: 32px;
+}
+#lidwordenicon {
+	position: absolute;
+	left: 69px;
+	top: 56px;	
+	width: 27px;
+	height: 27px;
+}
+#hurenicon {
+	position: absolute;
+	left: 418px;
+	top: 55px;	
+	width: 30px;
+	height: 30px;
+}
+#archieficon {
+	position: absolute;	
+	left: 770px;
+	top: 53px;
+	width: 33px;
+	height: 32px;
+}
+/*Hier wordt er bepaald wat er moet gebeuren als
+de muis over een menuitem gaat en als erop geklikt wordt*/
+nav li:hover {
+	background-color: #da0043;
+	text-shadow: 2px 2px 4px rgba(0,0,0,8.9)
+}
+nav li:active {
+	-webkit-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.35);
+	box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.35);
+	text-shadow: none;
+}
+/*Hiermee wordt de footer opgemaakt*/
+footer {
+	position: absolute;
+	top: 1016px;
+	left: 169px;
+	background-color: #8C002B;
+	width: 1064px;
+	height: 213px;
+	border: 1px solid white;
+	border-radius: 0px 0px 11px 11px;
+}
+footer div {
+	width: 423px;
+	height: 69px;
+	position: absolute;
+}
+footer h3 {
+	margin-top: 12px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+/*Hiermee worden de socialmedia logos opgemaakt*/
+#instagram {
+	width: 75px;
+	height: 69px;
+	position: absolute;
+	top: 85px;
+	left: 321px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.3);
+	border-radius: 19px;
+}
+#facebook {
+	width: 75px;
+	height: 69px;
+	position: absolute;
+	top: 85px;
+	left: 500px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.3);
+	border-radius: 19px;
+}
+#twitter {
+	width: 75px;
+	height: 69px;
+	position: absolute;
+	top: 85px;
+	left: 669px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.3);
+	border-radius: 19px;
+}
+/*Hiermee wordt het copyright van Imperium opgemaakt en gepositioneerd*/
+#copyright {
+	font-size: 14px;
+	color: #990000;
+	width: 160px;
+	height: 17px;
+	position: absolute;
+	top: 1246px;
+	left: 621px;
+	margin: 0px;
+}

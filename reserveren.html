@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8" />
+		<title>Imperium Theater | Reserveren</title>
+		<link rel="stylesheet" type="text/css" href="css/style_reserveren.css" />
+		<script type="text/javascript" src="js/reserveren_resetform.js"></script>
+		<script type="text/javascript" src="js/alert.js"></script>
+	</head>
+	<body>
+		<!--Dit is het logo-->
+		<nav>
+			<a href="index.html"><img id="logo" src="img/LogoNormaal.jpg" alt="Logo Zonsopkomst Imperium" /></a>
+		</nav>
+		<!--Dit is de header met sfeerimpressies-->
+		<header>
+			<img id="header" src="img/HeaderVisuals.jpg" alt="Sfeerimpressie Imperium" />
+		</header>
+		<!--Dit is de hoofdsectie met content-->
+		<section>
+			<h1>Killer Joe</h1>
+			<h2>Vul hieronder uw reserveringsgegevens in<br /><span>*Alle velden zijn verplicht</span></h2>
+			<!--Dit is het bestelformulier-->
+			<form action="#" method="get" id="form" />
+				<label for="first-name">Voornaam</label>
+				<input type="text" name="voornaam" id="voornaam"  placeholder="Bijv. Peter" />
+				<br />
+				<label for="surname">Achternaam</label>
+				<input type="text" name="achternaam" id="achternaam" placeholder="Bijv. van der Post" />
+				<br />
+				<label for="phonenumber">Telefoonnummer</label>
+				<input type="text" name="phonenumber" id="phonenumber"  placeholder="Bijv. 0612345678"/>
+				<br />
+				<label for="email">E-mailadres</label>
+				<input type="email" name="email" contenteditable="email" placeholder="Bijv. petervanderpost@hotmail.com" />
+				<br />
+				<label for="startingdate">Datum voorstelling</label>
+				<select name="startingdate" id="startingdate" />
+				<option value="2-4-2018">2-4-2018</option>
+				<option value="3-4-2018">3-4-2018</option>
+				<option value="4-4-2018" selected="selected">4-4-2018</option>
+				<option value="8-4-2018">8-4-2018</option>
+				<option value="9-4-2018">9-4-2018</option>
+				<option value="10-4-2018">10-4-2018</option>
+        		</select>
+        		<br />
+        		<label for="tickets">Aantal kaarten</label>
+				<select name="tickets" id="tickets" />
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				</select>
+          	</form>
+          	<!--Dit zijn de buttons-->
+			<a href="#"><button onclick="resetForm()">Opnieuw invullen</button></a>
+			<a href="controle.html"><button id="controleren">Controleren</button></a>
+		</section>
+		<!--Dit is het hoofdmenu-->
+		<nav id="menu">
+			<ul>
+				<li id="aboutus" onclick="showAlert()">
+					<img id="aboutusicon" src="img/AboutUS.png"><a href="#">Over Imperium</a>
+				</li>
+				<li id="fotoboek" onclick="showAlert()">
+					<img id="fotoboekicon" src="img/Fotoboek.png"><a href="#">Fotoboek</a>
+				</li>
+				<li id="nieuwsbrief" onclick="showAlert()">
+					<img id="nieuwsbrieficon" src="img/Nieuwsbrief.png"><a href="#">Nieuwsbrief</a>
+				</li>
+			</ul> 
+			<ul>
+				<li id="lidworden" onclick="showAlert()">
+					<img id="lidwordenicon" src="img/LidWorden.png"><a href="#">Lid worden</a>
+				</li>
+				<li id="huren" onclick="showAlert()">
+					<img id="hurenicon" src="img/Huren.png"><a href="#">Huren</a>
+				</li>
+				<li id="archief" onclick="showAlert()">
+					<img id="archieficon" src="img/Archief.png"><a href="#">Archief</a>
+				</li>
+			</ul>
+		</nav>
+		<!--Dit is de footer-->
+		<footer>
+			<h3>Volg ons op social media</h3>
+			<img id="instagram" src="img/Instagram.png" alt="logo van Instagram" onclick="showAlert()" />
+			<img id="facebook" src="img/Facebook.png" alt="logo van Facebook" onclick="showAlert()" />
+			<img id="twitter" src="img/Twitter.png" alt="logo van Twitter" onclick="showAlert()" />
+		</footer>
+		<!--Dit is het copyright van Imperium Theater-->
+		<p id="copyright">©2018 Theater Imperium.</p>
+	</body>
+</html>

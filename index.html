@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8" />
+		<title>Imperium Theater | Home</title>
+		<link rel="stylesheet" type="text/css" href="css/style_home.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<script type="text/javascript" src="js/siema.min.js"></script>
+		<script type="text/javascript" src="js/index_carrousel.js"></script>
+		<script type="text/javascript" src="js/index_voorstelling_alert.js"></script>
+		<script type="text/javascript" src="js/alert.js"></script>
+	</head>
+	<body>
+		<!--Dit is het logo-->
+		<nav>
+			<a href="index.html"><img id="logo" src="img/LogoNormaal.jpg" alt="Logo Zonsopkomst Imperium" /></a>
+		</nav>
+		<!--Dit de header met sfeerimpressies-->
+		<header>
+			<img id="header" src="img/HeaderVisuals.jpg" alt="Sfeerimpressie Imperium" />
+		</header>
+		<!--Dit de carrousel met voorstellingen-->
+		<section class="tijdschema">
+			<div class="maanden">
+				<div class="maanden-container">
+					<!--Voorstellingen in Maart-->
+					<div class="dagen">
+						<h1><i class="fas fa-calendar-alt"></i> Voorstellingen in Maart</h1>
+						<div id="maart" class="dagen-container">
+				  			<div onclick="andereVoorstelling()">
+				  				<img src="img/Dialo.png">
+				  				<h2>Dialo<br /><br /><span>Za 16 Maart - 15:00</span></h2>
+				  			</div>
+				  			<div onclick="andereVoorstelling()">
+				  				<img src="img/Killerjoe.png"><h2>Killer Joe<br /><br /><span>Zo 17 Maart - 13:00</span></h2>
+				  			</div>
+				  			<div onclick="andereVoorstelling()">
+				  				<img src="img/Godslachting.png"><h2>God van de slachting<br /><br /><span>Ma 18 Maart - 12:00</span></h2>
+				  			</div>
+				  			<div onclick="andereVoorstelling()">
+				  				<img src="img/Dochterkoning.png"><h2>Dochter van de boerenkoning<br /><br /><span>Di 19 Maart - 17:00</span></h2>
+				  			</div>
+				  			<div onclick="andereVoorstelling()">
+				  				<img src="img/Bedrog.png"><h2>Bedrog<br /><br /><span>Wo 20	 Maart - 12:00</span></h2>
+				  			</div>
+				  		</div>
+					</div>
+					<!--Voorstellingen in April-->
+					<div class="dagen">
+						<h1><i class="fas fa-calendar-alt"></i> Voorstellingen in April</h1>
+						<div id="april" class="dagen-container">
+				  			<div onclick="andereVoorstelling()">
+				  				<img src="img/Dochterkoning.png">
+				  				<h2>Dochter van de boerenkoning<br /><br /><span>Ma 1 April - 15:00</span></h2>
+				  			</div>
+				  			<div onclick="andereVoorstelling()">
+				  				<img src="img/Godslachting.png"><h2>God van de slachting<br /><br /><span>Di 2 April - 14:00</span></h2>
+				  			</div>
+				  			<div onclick="andereVoorstelling()">
+				  				<img src="img/Bedrog.png"><h2>Bedrog<br /><br /><span>Wo 3 April - 12:00</span></h2>
+				  			</div>
+				  			<a href="killerjoe.html"><div>
+				  				<img src="img/Killerjoe.png"><h2>Killer Joe<br /><br /><span>Do 4 April - 17:00</span></h2>
+				  			</div></a>
+				  			<div onclick="andereVoorstelling()">
+				  				<img src="img/Dialo.png"><h2>Dialo<br /><br /><span>Vr 5 April - 12:00</span></h2>
+				  			</div>
+				  		</div>
+					</div>
+				</div>
+				<!--Buttons om binnen een maand tussen voorstellingen te kunnen kijken-->
+				<button class="links"><img src="img/links.png"></button>
+				<button class="rechts"><img src="img/rechts.png"></button>
+			</div>
+			<!--Buttons om van de ene naar de andere maand te gaan-->
+			<button class="vorigemaand">Vorige maand</button>
+			<button class="volgendemaand">Volgende maand</button>
+		</section>
+		<!--Dit is het hoofdmenu-->
+		<nav id="menu">
+			<ul>
+				<li id="aboutus" onclick="showAlert()">
+					<img id="aboutusicon" src="img/AboutUS.png"><a href="#">Over Imperium</a>
+				</li>
+				<li id="fotoboek" onclick="showAlert()">
+					<img id="fotoboekicon" src="img/Fotoboek.png"><a href="#">Fotoboek</a>
+				</li>
+				<li id="nieuwsbrief" onclick="showAlert()">
+					<img id="nieuwsbrieficon" src="img/Nieuwsbrief.png"><a href="#">Nieuwsbrief</a>
+				</li>
+			</ul> 
+			<ul>
+				<li id="lidworden" onclick="showAlert()">
+					<img id="lidwordenicon" src="img/LidWorden.png"><a href="#">Lid worden</a>
+				</li>
+				<li id="huren" onclick="showAlert()">
+					<img id="hurenicon" src="img/Huren.png"><a href="#">Huren</a>
+				</li>
+				<li id="archief" onclick="showAlert()">
+					<img id="archieficon" src="img/Archief.png"><a href="#">Archief</a>
+				</li>
+			</ul>
+		</nav>
+		<!--Dit is de footer-->
+		<footer>
+			<h3>Volg ons op social media</h3>
+			<img id="instagram" src="img/Instagram.png" alt="logo van Instagram" onclick="showAlert()" />
+			<img id="facebook" src="img/Facebook.png" alt="logo van Facebook" onclick="showAlert()" />
+			<img id="twitter" src="img/Twitter.png" alt="logo van Twitter" onclick="showAlert()" />
+		</footer>
+		<!--Dit is het copyright van Imperium Theater-->
+		<p id="copyright">©2018 Theater Imperium.</p>
+	</body>
+</html>

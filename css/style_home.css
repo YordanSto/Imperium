@@ -1,0 +1,290 @@
+body {
+	background-color: white;
+	font-family: "Helvetica";
+}
+/*Hiermee wordt het logo opgemaakt*/
+nav {
+	width: 99px;
+	height: 84px;
+	position: absolute;
+	top: 20px;
+	left: 651px;
+}
+#logo {
+	width: 99px;
+	height: 84px;
+}
+/*Hier wordt er bepaald wat er moet gebeuren als
+de muis over het logo gaat*/
+#logo:hover {
+	content: url('LogoHover.jpg');
+    width: 99px;
+    height: 84px;
+ }
+/*Hiermee wordt de header opgemaakt*/
+header {
+	width: 1064px;
+	height: 226px;
+	position: absolute;
+	top: 120px; 
+	left: 169px;
+}
+/*Hiermee wordt de sectie van de carrousel opgemaakt*/
+section {
+	width: 1064px;
+	position: absolute;
+	top: 363px;
+	left: 169px;
+	border: 1px solid #777777;
+	border-radius: 11px;
+}
+/*Hiermee wordt de h1 opgemaakt die de maanden aangeeft*/
+h1 {
+	width: auto;
+	height: 43px;
+	top: 0px;
+	left: 170px;
+	background-color: #8C002B;
+	color: white;
+	font-size: 21px;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 10px;
+	text-align: center;
+	border-radius: 11px;
+}
+/*Hiermee worden de voorstellingen gepositioneerd en de afmetingen bepaald*/
+.maanden * {
+	box-sizing: border-box;
+}
+.maanden-container {
+	overflow-x: hidden;
+	width: 100%;
+}
+.dagen {
+	overflow-x: auto;
+}
+.dagen div {
+	min-width: 300px;
+}
+.dagen img {
+	width: 360px;
+	height: 400px;
+}
+/*Hier wordt de voorstellingsinfo opgemaakt*/
+h2 {
+	color: #8C002B;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+span {
+	font-size: 18px
+}
+div a {
+	text-decoration: none;
+}
+/*Hiermee worden de buttons van de carrousel opgemaakt*/
+button {
+	position: absolute;
+	top: 43px;
+	padding: 0px;
+	border: 0px;
+	height: 400px;
+	background-color: rgba(134,134,134,0.65);
+}
+.rechts {
+	left: 1032px;
+}
+.vorigemaand {
+	position: absolute;
+	top: 0px;
+	width: 170px;
+	height: 43px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #DA0043;
+	border-top-left-radius: 11px;
+}
+.volgendemaand {
+	position: absolute;
+	top: 0px;
+	left: 894px;
+	width: 170px;
+	height: 43px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #DA0043;
+	border-top-right-radius: 11px;
+}
+/*Hiermee wordt er bepaald hoe de buttons moeten reageren wanneer erop
+geklikt wordt als er met de muis overheen wordt gegaan*/
+button:hover {
+	background-color: rgba(134,134,134,0.95);
+}
+button:active, button:focus {
+	outline: none;
+}
+.vorigemaand:hover, .volgendemaand:hover {
+	background-color: #DA0043;
+	text-shadow: 2px 2px 4px rgba(0,0,0,6.5)
+}
+.vorigemaand:active, .volgendemaand:active {
+	-webkit-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.35);
+	box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.35);
+	text-shadow: none;
+}
+/*Hiermee wordt het hoofdmenu opgemaakt*/
+#menu {
+	width: 1064px;
+	height: 88px;
+	position: absolute;
+	top: 923px;
+	left: 169px;
+}
+#aboutus, #fotoboek, #lidworden, #huren {
+	margin-right: 1px;
+}
+nav ul {
+	display: inline-block;
+	list-style: none;	
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+nav li {
+	float: left;
+	background-color: #2E011B;
+	display: inline-block;
+	border-radius: 5px;
+	width: 354px;
+	height: 44px;
+}
+nav a {
+	line-height: 2.7;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+/*Hiermee wordt de icoontjes van de menuknoppen gepostioneerd*/
+#aboutusicon {
+	position: absolute;
+	left: 69px;
+	top: 9px;
+	width: 27px;
+	height: 27px;
+}
+#fotoboekicon{
+	position: absolute;
+	left: 418px;
+	top: 11px;
+	width: 30px;
+	height: 23px;
+}
+#nieuwsbrieficon {
+	position: absolute;
+	left: 767px;
+	top: 5px;	
+	width: 36px;
+	height: 32px;
+}
+#lidwordenicon {
+	position: absolute;
+	left: 69px;
+	top: 56px;	
+	width: 27px;
+	height: 27px;
+}
+#hurenicon {
+	position: absolute;
+	left: 418px;
+	top: 55px;	
+	width: 30px;
+	height: 30px;
+}
+#archieficon {
+	position: absolute;	
+	left: 770px;
+	top: 53px;
+	width: 33px;
+	height: 32px;
+}
+/*Hier wordt er bepaald wat er moet gebeuren als
+de muis over een menuitem gaat en als erop geklikt wordt*/
+nav li:hover {
+	background-color: #da0043;
+	text-shadow: 2px 2px 4px rgba(0,0,0,8.9)
+}
+nav li:active {
+	-webkit-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.35);
+	box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.35);
+	text-shadow: none;
+}
+/*Hiermee wordt de footer opgemaakt*/
+footer {
+	position: absolute;
+	top: 1029px;
+	left: 169px;
+	background-color: #8C002B;
+	width: 1064px;
+	height: 213px;
+	border: 1px solid white;
+	border-radius: 0px 0px 11px 11px;
+}
+footer div {
+	width: 423px;
+	height: 69px;
+	position: absolute;
+}
+footer h3 {
+	margin-top: 12px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+/*Hiermee worden de socialmedia logos opgemaakt*/
+#instagram {
+	width: 75px;
+	height: 69px;
+	position: absolute;
+	top: 85px;
+	left: 321px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.3);
+	border-radius: 19px;
+}
+#facebook {
+	width: 75px;
+	height: 69px;
+	position: absolute;
+	top: 85px;
+	left: 500px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.3);
+	border-radius: 19px;
+}
+#twitter {
+	width: 75px;
+	height: 69px;
+	position: absolute;
+	top: 85px;
+	left: 669px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.3);
+	border-radius: 19px;
+}
+/*Hiermee wordt het copyright van Imperium opgemaakt en gepositioneerd*/
+#copyright {
+	font-size: 14px;
+	color: #990000;
+	width: 160px;
+	height: 17px;
+	position: absolute;
+	top: 1259px;
+	left: 621px;
+	margin: 0px;
+}

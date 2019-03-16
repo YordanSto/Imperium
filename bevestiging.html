@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8" />
+		<title>Imperium Theater | Bevestiging</title>
+		<link rel="stylesheet" type="text/css" href="css/style_bevestiging.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<script type="text/javascript" src="js/siema.min.js"></script>
+		<script type="text/javascript" src="js/bevestiging_carrousel.js"></script>
+		<script type="text/javascript" src="js/index_voorstelling_alert.js"></script>	
+		<script type="text/javascript" src="js/alert.js"></script>
+	</head>
+	<body>
+		<!--Dit is het logo-->
+		<nav>
+			<a href="index.html"><img id="logo" src="img/LogoNormaal.jpg" alt="Logo Zonsopkomst Imperium" /></a>
+		</nav>
+		<!--Dit is de header met sfeerimpressies-->
+		<header>
+			<img id="header" src="img/HeaderVisuals.jpg" alt="Sfeerimpressie Imperium" />
+		</header>
+		<!--Dit is de hoofdsectie met content-->
+		<section>
+			<h2>U heeft gereserveerd. Gefeliciteerd met uw kaartjes!</h2>
+			<!--Dit is de tabel met bestelgegevens-->
+			<h3>Overzicht van uw bestelling</h3>
+			<table>
+				<tr>
+					<th>Naam :</th>
+					<td> Yordan Stoyanov</td>
+				</tr>
+				<tr>
+					<th>Telefoonnummer :</th>
+					<td> 0612345678</td>
+				</tr>
+				<tr>
+					<th>E-mailadres :</th>
+					<td> 17060672@student.hhs.nl</td>
+				</tr>
+				<tr>
+					<th>Voorstelling :</th>
+					<td>Killer Joe</td>
+				</tr>
+				<tr>
+					<th>Toneelgroep :</th>
+					<td>Toneelgroep Imperium</td>
+				</tr>
+				<tr>
+					<th>Datum voorstelling :</th>
+					<td> 4-4-2018</td>
+				</tr>
+				<tr>
+					<th>Aantal kaarten :</th>
+					<td> 4</td>
+				</tr>
+				<tr>
+					<th>Tijd :</th>
+					<td>18:00</td>
+				</tr>
+			</table>
+			<!--Dit is de tabel met de openingstijden-->
+			<h3 id="headopeningstijden">Onze openingstijden</h3>
+			<table id="openingstijden">
+				<tr>
+					<th>Maandag :</th>
+					<td>12:00 - 20:00</td>
+				</tr>
+				<tr>
+					<th>Dinsdag :</th>
+					<td>12:00 - 20:00</td>
+				</tr>
+				<tr>
+					<th>Woensdag :</th>
+					<td>12:00 - 20:00</td>
+				</tr>
+				<tr>
+					<th>Donderdag :</th>
+					<td>12:00 - 20:00</td>
+				</tr>
+				<tr>
+					<th>Vrijdag :</th>
+					<td>12:00 - 20:00</td>
+				</tr>
+				<tr>
+					<th>Zaterdag :</th>
+					<td>12:00 - 16:00</td>
+				</tr>
+				<tr>
+					<th>Zondag :</th>
+					<td>12:00 - 16:00</td>
+				</tr>
+			</table>
+			<h3 id="belangrijkeinfo">Belangrijke informatie</h3>
+			<ul>
+				<li>De kassa gaat anderhalf uur voor aanvang van de voorstelling open.</li>
+				<li>Niet afgehaalde kaarten gaan een kwartier vóór aanvang van de voorstelling in de losse verkoop.</li>
+				<li>Het wijzigen of afzeggen van reserveringen is mogelijk door het naar u verstuurde mailbericht te beantwoorden en de wijziging door te geven.</li>
+			</ul>
+			<h3 id="locatie">Hier kunt u ons vinden</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.467023447569!2d4.48609531579413!3d52.162201779748045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c6ecef888c2f%3A0x1841f7f64e1614f1!2sImperium!5e0!3m2!1snl!2snl!4v1523981059805" allowfullscreen></iframe><div>
+		</section>
+		<!--Dit is de carrousel met voorgestelde voorstellingen-->
+
+		<section class="tijdschema">
+			<div class="maanden">
+				<div class="maanden-container">
+					<div class="dagen">
+						<h1><i class="fas fa-calendar-alt"></i> Later in April</h1>
+						<div id="maart" class="dagen-container">
+				  			<div>
+				  				<img src="img/Zouthuis.png">
+				  				<h2>Het zouthuis<br /><span>Za 15 April - 12:00</span></h2>
+				  			</div>
+				  			<div>
+				  				<img src="img/Bedrog2.png"><h2>Bedrog<br /><span>Zo 16 April - 15:00</span></h2>
+				  			</div>
+				  			<div>
+				  				<img src="img/Twee.png"><h2>Twee<br /><span>Ma 17 April - 17:00</span></h2>
+				  			</div>
+				  		</div>
+					</div>
+				</div>
+			</div>
+			<button class="links" onclick="showAlert()"><img src="img/links2.png"></button>
+			<button class="rechts" onclick="showAlert()"><img src="img/rechts2.png"></button>
+		</section>
+
+		<!--Dit is het hoofdmenu-->
+		<nav id="menu">
+			<ul>
+				<li id="aboutus" onclick="showAlert()">
+					<img id="aboutusicon" src="img/AboutUS.png"><a href="#">Over Imperium</a>
+				</li>
+				<li id="fotoboek" onclick="showAlert()">
+					<img id="fotoboekicon" src="img/Fotoboek.png"><a href="#">Fotoboek</a>
+				</li>
+				<li id="nieuwsbrief" onclick="showAlert()">
+					<img id="nieuwsbrieficon" src="img/Nieuwsbrief.png"><a href="#">Nieuwsbrief</a>
+				</li>
+			</ul> 
+			<ul>
+				<li id="lidworden" onclick="showAlert()">
+					<img id="lidwordenicon" src="img/LidWorden.png"><a href="#">Lid worden</a>
+				</li>
+				<li id="huren" onclick="showAlert()">
+					<img id="hurenicon" src="img/Huren.png"><a href="#">Huren</a>
+				</li>
+				<li id="archief" onclick="showAlert()">
+					<img id="archieficon" src="img/Archief.png"><a href="#">Archief</a>
+				</li>
+			</ul>
+		</nav>
+		<!--Dit is de footer-->
+		<footer>
+			<h3>Volg ons op social media</h3>
+			<img id="instagram" src="img/Instagram.png" alt="logo van Instagram" onclick="showAlert()" />
+			<img id="facebook" src="img/Facebook.png" alt="logo van Facebook" onclick="showAlert()" />
+			<img id="twitter" src="img/Twitter.png" alt="logo van Twitter" onclick="showAlert()" />
+		</footer>
+		<!--Dit is het copyright van Imperium Theater-->
+		<p id="copyright">©2018 Theater Imperium.</p>
+	</body>
+</html>
